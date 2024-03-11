@@ -56,6 +56,7 @@ public class Program
                 client.Log += LogAsync;
                 commands.Log += LogAsync;
                 client.Ready += ReadyAsync;
+                client.ButtonExecuted += ButtonExecutedAsync;
                 //_client.MessageReceived += MessageReceivedAsync;
 
                 // this is where we get the Token value from the configuration file, and start the bot
@@ -69,15 +70,36 @@ public class Program
                 await Task.Delay(Timeout.Infinite);
 
             }
+    }
 
-        // var config = new DiscordSocketConfig()
-        // {
-        //     GatewayIntents = GatewayIntents.AllUnprivileged
-        //     //MessageCacheSize = 50
-        // };
+    public async Task ButtonExecutedAsync(SocketMessageComponent component)
+    {
+        // We can now check for our custom id
+        // Since we set our buttons custom id as 'row_0_button_0', we can check for it like this:
+        if(component.Data.CustomId == "row_0_button_0")
+        {
+            string userNameFirstWord = _client.CurrentUser.Username.Split(' ')[0];
+            
+            var embed = new EmbedBuilder
+                {
+                    // Embed property can be set within object initializer
+                    Title = userNameFirstWord + " Captcha Authentication",
+                    Description = "Please complete this captcha to prove you are a human:"
+                };
+            // Or with methods
+            embed.AddField("Timeout",
+                "You have 1 minute to solve this Captcha")
+                .WithAuthor(userNameFirstWord + " | Bot", _client.CurrentUser.GetDisplayAvatarUrl())
+                .WithColor(Color.DarkPurple);
 
-        // _client = new DiscordSocketClient(config);
+            
+            //Your embed needs to be built before it is able to be sent
+            await component.RespondAsync(embed: embed.Build());
 
+
+            //await component.RespondAsync($"{component.User.Mention} has clicked the button!");
+            
+        }
     }
 
     private async Task MessageReceivedAsync(SocketMessage message)

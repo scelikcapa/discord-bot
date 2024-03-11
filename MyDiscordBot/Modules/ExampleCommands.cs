@@ -48,31 +48,31 @@ namespace MyDiscordBot.Services
         }
         */
       
-        
         [SlashCommand("sendembed", "send an authentication embed to channel!")]
         public async Task SendEmbed()
         {
+            
+            Emoji emoji;
+            var isEmojiExists = Emoji.TryParse(":robot:",out emoji);
+            
+            string userNameFirstWord = Context.Client.CurrentUser.Username.Split(' ')[0];
+            
             var embedBuilder = new EmbedBuilder();
-            
             embedBuilder.WithTitle("Solve Captcha")
-                .WithDescription("Click :robot: below to request a captcha.\nNote: You must solve a captcha within 10 minutes.")
-                .WithAuthor("Verto | Bot", Context.Client.CurrentUser.GetDisplayAvatarUrl())
-                .WithColor(Color.Magenta);
-
-            // var buttonBuilder = new ButtonBuilder().WithLabel()
-               //                     .WithLabel(":robot: Solve Captcha")
-                 //                   .WithCustomId("row_0_button_0")
-                   //                 .WithStyle(ButtonStyle)
-            
-            var label = "Solve Captcha";
+                .WithDescription($"Click {emoji.Name} below to request a captcha.\nNote: You must solve a captcha within 10 minutes.")
+                .WithAuthor(userNameFirstWord + " | Bot", Context.Client.CurrentUser.GetDisplayAvatarUrl())
+                .WithColor(Color.DarkPurple);
 
             var componentBuilder = new ComponentBuilder()
-                            .WithButton(label: label, "row_0_button_0",ButtonStyle.Secondary);
+                            .WithButton(label: "Solve Captcha", "row_0_button_0",ButtonStyle.Secondary,emote: isEmojiExists ? emoji : null);
 
             // reply with the answer
             await RespondAsync(embed: embedBuilder.Build(),components: componentBuilder.Build());
         }
         
+  
+    
+
 
         /*
         [Command("embed")]
