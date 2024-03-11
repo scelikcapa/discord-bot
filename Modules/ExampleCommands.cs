@@ -41,5 +41,13 @@ namespace MyDiscordBot.Services
             // reply with the answer
             await RespondAsync($"You asked: [**{question}**], and your answer is: [**{answer}**]");
         }
+
+      
+        [SlashCommand("sendembed", "send an authentication embed to channel!")]
+        public async Task SendEmbed()
+        {
+            // reply with the answer
+            await RespondAsync($"embed sended...");
+        }
     }
 }
