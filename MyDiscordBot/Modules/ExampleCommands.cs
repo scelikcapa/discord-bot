@@ -1,9 +1,13 @@
 using Discord;
+using Discord.Commands;
 using Discord.Interactions;
+using Discord.Rest;
 using Discord.WebSocket;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +26,7 @@ namespace MyDiscordBot.Services
             _handler = handler;
         }
 
+        /*
         // our first /command!
         [SlashCommand("8ball", "find your answer!")]
         public async Task EightBall(string question)
@@ -41,13 +46,59 @@ namespace MyDiscordBot.Services
             // reply with the answer
             await RespondAsync($"You asked: [**{question}**], and your answer is: [**{answer}**]");
         }
-
+        */
       
+        
         [SlashCommand("sendembed", "send an authentication embed to channel!")]
         public async Task SendEmbed()
         {
+            var embedBuilder = new EmbedBuilder();
+            
+            embedBuilder.WithTitle("Solve Captcha")
+                .WithDescription("Click :robot: below to request a captcha.\nNote: You must solve a captcha within 10 minutes.")
+                .WithAuthor("Verto | Bot", Context.Client.CurrentUser.GetDisplayAvatarUrl())
+                .WithColor(Color.Magenta);
+
+            // var buttonBuilder = new ButtonBuilder().WithLabel()
+               //                     .WithLabel(":robot: Solve Captcha")
+                 //                   .WithCustomId("row_0_button_0")
+                   //                 .WithStyle(ButtonStyle)
+            
+            var label = "Solve Captcha";
+
+            var componentBuilder = new ComponentBuilder()
+                            .WithButton(label: label, "row_0_button_0",ButtonStyle.Secondary);
+
             // reply with the answer
-            await RespondAsync($"embed sended...");
+            await RespondAsync(embed: embedBuilder.Build(),components: componentBuilder.Build());
         }
+        
+
+        /*
+        [Command("embed")]
+        public async Task SendRichEmbedAsync()
+        {
+            var embed = new EmbedBuilder
+                {
+                    // Embed property can be set within object initializer
+                    Title = "Hello world!",
+                    Description = "I am a description set by initializer."
+                };
+                // Or with methods
+            embed.AddField("Field title",
+                "Field value. I also support [hyperlink markdown](https://example.com)!")
+                .WithAuthor(Context.Client.CurrentUser)
+                .WithFooter(footer => footer.Text = "I am a footer.")
+                .WithColor(Color.Blue)
+                .WithTitle("I overwrote \"Hello world!\"")
+                .WithDescription("I am a description.")
+                .WithUrl("https://example.com")
+                .WithCurrentTimestamp();
+
+            //Your embed needs to be built before it is able to be sent
+            await ReplyAsync(embed: embed.Build());
+        }
+        */
+        
     }
 }
