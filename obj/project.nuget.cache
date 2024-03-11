@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8mwZvUx4KclqBCN3x5PMo66Jqn4M0fTbBx6uvn3qduIcv9Qo7oO9Smun6/dagNFfg0+DNGoW2IC9A7U48ayww==",
+  "dgSpecHash": "4goIJphKjaoj1uykKq1L6nN0Mf7gEbQqV/w/JDeONajIe2vnRUthK8idzH/zwmwr7CHaXMF8wzECwoAtaJMxYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\asus\\OneDrive\\Belgeler\\Projects\\scelikcapa\\verto-bot\\mydiscordbot\\MyDiscordBot.csproj",
   "expectedPackageFiles": [
@@ -11,12 +11,24 @@
     "C:\\Users\\asus\\.nuget\\packages\\discord.net.rest\\3.13.1\\discord.net.rest.3.13.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\discord.net.webhook\\3.13.1\\discord.net.webhook.3.13.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\discord.net.websocket\\3.13.1\\discord.net.websocket.3.13.1.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.interactive.async\\5.0.0\\system.interactive.async.5.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []

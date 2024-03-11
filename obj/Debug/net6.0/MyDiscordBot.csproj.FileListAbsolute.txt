@@ -25,3 +25,12 @@ C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\obj\D
 C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\obj\Debug\net6.0\MyDiscordBot.pdb
 C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\obj\Debug\net6.0\MyDiscordBot.genruntimeconfig.cache
 C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\obj\Debug\net6.0\ref\MyDiscordBot.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\asus\OneDrive\Belgeler\Projects\scelikcapa\verto-bot\mydiscordbot\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
