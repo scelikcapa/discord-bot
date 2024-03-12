@@ -3,6 +3,7 @@ using Discord.Commands;
 using Discord.Interactions;
 using Discord.Rest;
 using Discord.WebSocket;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,11 +20,13 @@ namespace MyDiscordBot.Services
         // dependencies can be accessed through Property injection, public properties with public setters will be set by the service provider
         public InteractionService Commands { get; set; }
         private CommandHandler _handler;
+        private readonly IConfiguration _config;
 
         // constructor injection is also a valid way to access the dependecies
-        public ExampleCommands (CommandHandler handler)
+        public ExampleCommands (CommandHandler handler, IConfiguration config)
         {
             _handler = handler;
+            _config = config;
         }
 
         /*
@@ -51,7 +54,15 @@ namespace MyDiscordBot.Services
         [SlashCommand("sendembed", "send an authentication embed to channel!")]
         public async Task SendEmbed()
         {
-            
+
+            string urlForAuth = _config["URLForAuthentication"];
+
+            if (string.IsNullOrEmpty(urlForAuth))
+            {
+                await RespondAsync("URL has not been set yet! Please use /seturl commmand first.");
+                return;
+            }
+
             Emoji emoji;
             var isEmojiExists = Emoji.TryParse(":robot:",out emoji);
             
@@ -68,6 +79,21 @@ namespace MyDiscordBot.Services
 
             // reply with the answer
             await RespondAsync(embed: embedBuilder.Build(),components: componentBuilder.Build());
+        }
+
+        [SlashCommand("seturl", "set the URL of Verto Authentication Link!")]
+        public async Task SetUrl(string urlForAuthentication)
+        {
+            try
+            {
+                _config["URLForAuthentication"] = urlForAuthentication;
+                await RespondAsync($"URL is set. New URL is {_config["URLForAuthentication"]}");
+            }
+            catch
+            {
+                await RespondAsync($"An error occur. Please retry again");
+            }
+         
         }
         
   

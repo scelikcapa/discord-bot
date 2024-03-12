@@ -84,11 +84,11 @@ public class Program
                 {
                     // Embed property can be set within object initializer
                     Title = userNameFirstWord + " Captcha Authentication",
-                    Description = "Please complete this captcha to prove you are a human:"
+                    Description = $"Please complete this captcha to prove you are a human:\n{_config["URLForAuthentication"]}"
                 };
             // Or with methods
             embed.AddField("Timeout",
-                "You have 1 minute to solve this Captcha")
+                "You have 1 minute to solve this Captcha.\nYou will only get 1 try per captcha")
                 .WithAuthor(userNameFirstWord + " | Bot", _client.CurrentUser.GetDisplayAvatarUrl())
                 .WithColor(Color.DarkPurple);
 
@@ -102,6 +102,7 @@ public class Program
         }
     }
 
+    /*
     private async Task MessageReceivedAsync(SocketMessage message)
     {
         Console.WriteLine($"{DateTime.Now,-19} [{message.Content,8}] {message.Source}: {message.ToString}");
@@ -110,6 +111,7 @@ public class Program
             await message.Channel.SendMessageAsync("Hello, Discord!");
         }
     }
+    */
 
     private Task LogAsync(LogMessage message)
     {
