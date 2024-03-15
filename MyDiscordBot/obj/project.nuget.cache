@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4goIJphKjaoj1uykKq1L6nN0Mf7gEbQqV/w/JDeONajIe2vnRUthK8idzH/zwmwr7CHaXMF8wzECwoAtaJMxYQ==",
+  "dgSpecHash": "O2Wjz7BCwmyXBz0R8giEaPeXaU4n6UIYsf9xCughbtNP6m4S/+IJYxZJHX0xK5YAgUqcMotoo9wWJeIzRuzN4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\OneDrive\\Belgeler\\Projects\\scelikcapa\\verto-bot\\mydiscordbot\\MyDiscordBot.csproj",
+  "projectFilePath": "C:\\Users\\asus\\OneDrive\\Belgeler\\Projects\\scelikcapa\\verto-bot\\MyDiscordBot\\MyDiscordBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\discord.net\\3.13.1\\discord.net.3.13.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\discord.net.commands\\3.13.1\\discord.net.commands.3.13.1.nupkg.sha512",
@@ -29,7 +29,11 @@
     "C:\\Users\\asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\asus\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }

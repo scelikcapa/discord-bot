@@ -72,7 +72,7 @@ namespace MyDiscordBot.Services
             embedBuilder.WithTitle("Solve Captcha")
                 .WithDescription($"Click {emoji.Name} below to request a captcha.\nNote: You must solve a captcha within 10 minutes.")
                 .WithAuthor(userNameFirstWord + " | Bot", Context.Client.CurrentUser.GetDisplayAvatarUrl())
-                .WithColor(Color.DarkPurple);
+                .WithColor(Color.Orange);
 
             var componentBuilder = new ComponentBuilder()
                             .WithButton(label: "Solve Captcha", "row_0_button_0",ButtonStyle.Secondary,emote: isEmojiExists ? emoji : null);

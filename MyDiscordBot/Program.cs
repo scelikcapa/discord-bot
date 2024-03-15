@@ -90,7 +90,7 @@ public class Program
             embed.AddField("Timeout",
                 "You have 1 minute to solve this Captcha.\nYou will only get 1 try per captcha")
                 .WithAuthor(userNameFirstWord + " | Bot", _client.CurrentUser.GetDisplayAvatarUrl())
-                .WithColor(Color.DarkPurple);
+                .WithColor(Color.Orange);
 
             
             //Your embed needs to be built before it is able to be sent
